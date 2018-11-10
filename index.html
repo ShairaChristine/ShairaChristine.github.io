@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<section id="header">
+		<nav>
+			<a href="#"><p>Website Logo</p></a>
+		</nav>
+
+		<div class="slider">
+			
+			<div class="mySlides fade" style="background-image: url(assets/images/slider-1.jpg);">
+				<div class="wrapper">
+					<h1>キャッチコピーが入ります。</h1>
+					<h6>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h6>
+				</div>
+			</div>
+
+			<div class="mySlides fade" style="background-image: url(assets/images/slider-2.jpg)">
+				<div class="wrapper">
+					<h1>キャッチコピーが入ります。</h1>
+					<h6>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h6>
+				</div>
+			</div>
+
+			<div class="mySlides fade" style="background-image: url(assets/images/slider-3.jpg)">
+				<div class="wrapper">
+					<h1>キャッチコピーが入ります。</h1>
+					<h6>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h6>
+				</div>
+			</div>
+			
+			<div class="container">
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+
+			<div class="dot-wrapper">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		</div>
+	</section>
+	<section id="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-4 article">
+					<a class="card-article" href="#">
+						<div class="image-holder"></div>
+					  <div class="media-body">
+					    <p>2016.01.01</p>
+					    <h5>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h5>
+					    <h6>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト…</h6>
+					  </div>
+					</a>
+
+				</div>
+				<div class="col-2 side-bar" style="height: 100px; background-color: blue;">
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<a href="#">運営会社</a>
+				<a href="#">個人情報保護について</a>
+				<p>©2016 Sample</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = slides.length}    
+  if (n < 1) {slideIndex = 1}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
