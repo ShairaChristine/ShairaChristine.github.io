@@ -79,6 +79,7 @@ nav a{
 }
 nav p{
   text-align: center;
+  line-height: 45px;
 }
 /*SLIDER*/
 .mySlides {
@@ -122,6 +123,9 @@ img {vertical-align: middle;}
   text-align: center;
   top: 30%;
 }
+.wrapper h1{
+  line-height: 80px;
+}
 .wrapper h1,
 .wrapper h6{
   color: #fff;
@@ -130,6 +134,7 @@ img {vertical-align: middle;}
 .wrapper h6{
   max-width: 530px;
   margin: 0 auto;
+  line-height: 24px;
 }
 
 /* The dots/bullets/indicators */
@@ -177,10 +182,14 @@ img {vertical-align: middle;}
 }
 
 /*article*/
+.article-wrapper{
+  height: 100%;
+  margin: -20px 35px 60px 0;
+}
 .card-article{
   height: 116px;
   display: inline-block;
-  margin: 0 20px;
+  margin: 20px 0;
 }
 .image-holder{
   height: 100%;
@@ -197,14 +206,69 @@ img {vertical-align: middle;}
   font-family: 'Helveltica', sans-serif;
   font-size: 13px;
   margin: 0;
+  color: #000;
+  line-height: 18.2px;
 }
 .card-article h5{
   font-family: 'YuGo Bold', sans-serif;
   font-size: 18px;
+  line-height: 23.4px;
+}
+.card-article h5:hover{
+  color: #e7ba2f;
 }
 .card-article h6{
   font-family: 'YuGo Medium', sans-serif;
   font-size: 13px;
+  line-height: 16.9px;
+}
+
+.pagination{
+  background-color: #000;
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 175px;
+  color: #fff;
+}
+
+/*side-bar*/
+.side-bar{
+  background-color: #efefef;
+  margin-left: 20px;
+  padding: 20px;
+}
+.side-section{
+  margin-bottom: 20px;
+}
+.main-banner{
+  background-color: #fff;
+  height: 300px;
+}
+.recommended h3{
+  font-size: 24px;
+  text-align: center;
+  text-decoration: underline;
+}
+.recommended .card-article{
+  margin: 10px 0;
+  height: 63px;
+}
+.recommended .card-article > .image-holder{
+  width: 112px;
+  margin-right: 10px;
+}
+.recommended h6{
+  line-height: 16.25px;
+}
+.recommended p{
+  font-size: 12px;
+}
+.dummy-banner-wrapper{
+  height: 93px;
+  background-color: #666;
+  width: 100%;
+  margin: 9px 0;
 }
 /*FOOTER*/
 footer{
