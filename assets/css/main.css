@@ -123,14 +123,17 @@ img {vertical-align: middle;}
   text-align: center;
   top: 30%;
 }
-.wrapper h1{
-  line-height: 80px;
-}
 .wrapper h1,
 .wrapper h6{
   color: #fff;
   text-align: center;
 }
+.wrapper h1{
+  line-height: 80px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .wrapper h6{
   max-width: 530px;
   margin: 0 auto;
@@ -222,7 +225,9 @@ img {vertical-align: middle;}
   font-size: 13px;
   line-height: 16.9px;
 }
-
+.mx-pag{
+  text-align: center;
+}
 .pagination{
   background-color: #000;
   margin-top: 40px;
@@ -279,6 +284,8 @@ footer{
 footer a{
   font-size: 13px;
   color: #fff;
+  float: left;
+  margin: 14px 0;
 }
 footer p{
   font-size: 14px;
