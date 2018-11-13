@@ -5,6 +5,19 @@
 @-ms-viewport{
   width:device-width
 }
+@font-face{
+  font-family: YuGoBold;
+  src: url(../fonts/yugothib.ttf);
+  font-weight: bold;
+}
+@font-face{
+  font-family: YuGoLight;
+  src: url(../fonts/yugothil.ttf);
+}
+@font-face{
+  font-family: LucidaItallic;
+  src: url(../fonts/lucidacalligraphyitalic.ttf);
+}
 body{
 	margin: 0;
 	font-family: "",sans-serif;
@@ -14,7 +27,7 @@ body{
 }
 h1, h2, h3, h4, h5, h6{
 	color: #000;
-	font-family: "", sans-serif;
+	font-family: "YuGoBold", sans-serif;
   margin: 0;
 }
 h1{
@@ -69,7 +82,6 @@ nav{
   position: relative;
 }
 nav a{
-	font-size: 60px;
 	margin: 0;
   position: absolute;
   top: 50%;
@@ -78,23 +90,34 @@ nav a{
   transform: translateY(-50%);
 }
 nav p{
+  font-size: 60px;
   text-align: center;
   line-height: 45px;
+  font-family: 'LucidaItallic';
 }
 /*SLIDER*/
 .mySlides {
-  display: none; 
+  /*display: none; */
   height: 420px;
   background-position-y: 81%;
+  background-size: cover;
+
 }
 img {vertical-align: middle;}
 
 /* Slideshow container */
-.slider {
+#slider {
   max-width: 100%;
   position: relative;
+  display: block;
 }
-
+.slide{
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  overflow: hidden;
+  transition: .5s ease;
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -109,7 +132,6 @@ img {vertical-align: middle;}
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-
 
 .next {
   border-radius: 3px 0 0 3px;
@@ -161,23 +183,7 @@ img {vertical-align: middle;}
   background-color: #e7ba2f;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
 /*MAIN SECTION*/
 #main{
@@ -202,9 +208,6 @@ img {vertical-align: middle;}
   float: left;
   background-size: cover;
 }
-.image-holder:hover{
-  background-image: url(../images/ph_article.jpg);
-}
 .card-article p{
   font-family: 'Helveltica', sans-serif;
   font-size: 13px;
@@ -217,8 +220,11 @@ img {vertical-align: middle;}
   font-size: 18px;
   line-height: 23.4px;
 }
-.card-article h5:hover{
+.article-wrapper .card-article:hover h5{
   color: #e7ba2f;
+}
+.article-wrapper .card-article:hover .image-holder{
+    background-image: url(../images/ph_article.jpg);
 }
 .card-article h6{
   font-family: 'YuGo Medium', sans-serif;
@@ -253,7 +259,7 @@ img {vertical-align: middle;}
 .recommended h3{
   font-size: 24px;
   text-align: center;
-  text-decoration: underline;
+  border-bottom: 2px solid #000;
 }
 .recommended .card-article{
   margin: 10px 0;
@@ -275,6 +281,25 @@ img {vertical-align: middle;}
   width: 100%;
   margin: 9px 0;
 }
+
+#myBtn {
+  display: none;
+  position: fixed; 
+  bottom: 45px; 
+  left: 1238px;
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: transparent; 
+  color: #000; 
+  cursor: pointer; 
+  padding: 15px; 
+  font-size: 18px;
+}
+#myBtn:hover{
+  background-color: #000;
+  color: #fff;
+}
 /*FOOTER*/
 footer{
   background-color: #000;
@@ -285,7 +310,8 @@ footer a{
   font-size: 13px;
   color: #fff;
   float: left;
-  margin: 14px 0;
+  margin: 14px 20px 14px 0;
+  line-height: 32px;
 }
 footer p{
   font-size: 14px;

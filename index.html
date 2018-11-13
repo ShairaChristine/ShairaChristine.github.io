@@ -13,29 +13,28 @@
 			<a href="#"><p>Website Logo</p></a>
 		</nav>
 
-		<div class="slider">
+		<div id="slider">
 			
-			<div class="mySlides fade" style="background-image: url(assets/images/slider-1.jpg);">
+			<div class="mySlides slide" style="background-image: url(assets/images/slider-1.jpg);">
 				<div class="wrapper">
 					<h1>キャッチコピーが入ります。</h1>
-					<h6>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h6>
+					<h6>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h6>
 				</div>
 			</div>
 
-			<div class="mySlides fade" style="background-image: url(assets/images/slider-2.jpg)">
+			<div class="mySlides slide" style="background-image: url(assets/images/slider-2.jpg)">
 				<div class="wrapper">
 					<h1>キャッチコピーが入ります。</h1>
 					<h6>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h6>
+					サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h6>
 				</div>
 			</div>
 
-			<div class="mySlides fade" style="background-image: url(assets/images/slider-3.jpg)">
+			<div class="mySlides slide" style="background-image: url(assets/images/slider-3.jpg)">
 				<div class="wrapper">
 					<h1>キャッチコピーが入ります。</h1>
 					<h6>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h6>
+					サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</h6>
 				</div>
 			</div>
 			
@@ -51,6 +50,7 @@
 			</div>
 		</div>
 	</section>
+
 	<section id="main">
 		<div class="container">
 			<div class="row">
@@ -157,10 +157,11 @@
 
 				<div class="col-2">
 					<div class="side-bar">
-						<div class="side-section main-banner">
-							<a href="#">
-							</a>
-						</div>
+						<a href="#">
+							<div class="side-section main-banner">
+							</div>
+						</a>
+						
 						<div class="side-section recommended">
 							<h3>Recommended</h3>
 
@@ -190,25 +191,25 @@
 							
 						</div>
 						<div class="side-section">
-							<div class="dummy-banner-wrapper">
-								
-							</div>
-							<div class="dummy-banner-wrapper">
-								
-							</div>
-							<div class="dummy-banner-wrapper">
-								
-							</div>
+							<a href="#">
+								<div class="dummy-banner-wrapper">	</div>
+							</a>
+							<a href="#">
+								<div class="dummy-banner-wrapper">	</div>
+							</a>
+							<a href="#">
+								<div class="dummy-banner-wrapper">	</div>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
-	<section id="button">
-		
-	</section>
+	<!-- <button title="Go to top">Top</button> -->
+	<div class="container">
+		<button onclick="topFunction()" id="myBtn" >^</button>
+	</div>
 	<footer>
 		<div class="container">
 			<a href="#">運営会社</a>
@@ -221,34 +222,10 @@
 
 
 
-
-	<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = slides.length}    
-  if (n < 1) {slideIndex = 1}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
+	<script type='text/javascript' src="assets/js/jquery-3.3.1.min.js"></script>
+	<script type = "text/javascript" 
+     src = "assets/js/jquery-ui.min.js">
+  </script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
