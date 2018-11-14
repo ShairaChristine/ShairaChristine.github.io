@@ -153,12 +153,12 @@ img {vertical-align: middle;}
 .wrapper h1{
   line-height: 80px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 15px auto 0;
 }
 
 .wrapper h6{
   max-width: 530px;
-  margin: 0 auto;
+  margin: 40px auto 0;
   line-height: 24px;
 }
 
@@ -187,7 +187,7 @@ img {vertical-align: middle;}
 
 /*MAIN SECTION*/
 #main{
-  padding: 42px 0 90px;
+  padding: 42px 0 100px;
 }
 
 /*article*/
@@ -310,7 +310,7 @@ footer a{
   font-size: 13px;
   color: #fff;
   float: left;
-  margin: 14px 20px 14px 0;
+  margin: 7px 20px 7px 0;
   line-height: 32px;
 }
 footer p{
