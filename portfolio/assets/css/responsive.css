@@ -1,0 +1,31 @@
+@charset "utf-8";
+@media (min-width:576px){
+.top-bar .container {-ms-flex-direction: row;flex-direction: row;}
+.contact-nav{margin-right: auto;}
+/*.carousel-inner a{padding:15px 60px 15px 60px;width:unset;}*/
+.slide-3 .container{text-align:left;}
+.slide-2 .container,.slide-4 .container{text-align:right;}
+.who-we-r .col-md-4{}
+.who-we-r .fa{font-size:80px;margin-bottom: 40px;margin-top: 67px;}
+.sub-col input{position:absolute;width:96%;}
+.sub-col a{position:absolute;right:20px;width:unset;}
+footer .nav{display:flex;}
+}
+@media (min-width:680px){
+h1{font-size:40px;}
+}
+@media (min-width:768px){
+.sub-col a{right:10px;}
+.sub-col input{width: 98%;}
+footer .navbar-text{text-align:unset;width:unset;}
+}
+@media (min-width:992px){
+.main-nav .nav-link {text-align: center;}
+h1{font-size:78px;}
+.main-nav input{width:0;}
+.banner p{font-size:24px;}
+.img-holder{min-height:880px;}
+}
+@media (min-width:1200px){.main-nav .nav-link{white-space:nowrap;}
+.form-inline .form-control{width:auto;}
+.btn-nav-search{padding-right:10px;padding-left:10px;}
