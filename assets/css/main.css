@@ -84,8 +84,8 @@ button.nav-link{background-color:transparent;color:#506a85;border:0;}
 .work-content h5:hover{color:#00bc9c;}
 .work-content p{color:#73879c;}
 .featured-works{margin-bottom:80px;}
+.other-works .card{margin-bottom:30px;text-align: center;}
 .other-works p{color:#fff;}
-.other-works .card{margin-bottom:30px;}
 .company .card{margin: 10px 0;}
 .contact{padding:100px 0 100px;background-color: #283645;}
 .contact h5{margin-bottom: 40px; color: #f9f9f9;}
